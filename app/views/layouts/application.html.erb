@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>bvwtgt</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+
+    <%= stylesheet_link_tag "application" %>
+  </head>
+  <body class="has-background-white-ter">
+    <div class="container">
+      <div class="section is-hidden-mobile"></div>
+      <%= yield %>
+    </div>
+    <footer class="footer has-background-grey-lighter">
+      <div class="content has-text-centered pt-6">
+        <span>contact @ tim [at] bvwtgt [dot] xyz</span>
+
+        <h3 class="title is-6">2021 © TGT</h3>
+      </div>
+    </footer>
+
+</html>

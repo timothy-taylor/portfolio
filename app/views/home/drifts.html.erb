@@ -1,0 +1,105 @@
+<div class="is-flex-tablet is-flex-direction-column is-justify-content-center is-align-items-center">
+  <section class="content">
+    <h3 class="title has-text-centered"><%= link_to "back", root_path %></h3>
+    <h1 class="title">Drifts</h1>
+    <h2 class="subtitle is-5">generative poem born from scraps of unused song lyrics</h2>
+    <h3 class="subtitle is-6">by TGT</h3>
+    <p>
+    built up upon which you wrote<br>
+    no longer the new language never spoken<br>
+    and while yearning for the waves and black boxes<br>
+    am I even remembering your name <br>
+    others, whose name <br>
+    others, whose name <br>
+    others, whose name I pretend to climb through<br>
+    with or without something else<br>
+    </p><p>
+    safety being an object<br>
+    for the idea of me that adds up my senses<br>
+    I feel content.<br>
+    </p><p>
+    who speaks?<br>
+    losing the walls padded<br>
+    when one dies, the race<br>
+    but to project their proper prepartions<br>
+    of body, mind, or genesis<br>
+    gathered twigs arranged just outside <br>
+    the foam that anyone who emphasize their soul<br>
+    you sacrifice peace with humans<br>
+    against the early 21st century horrors<br>
+    </p><p>
+    can we, given space, be found?<br>
+    one's treasure can be my pace, I accend.<br>
+    the dark that continues to change my life<br>
+    </p><p>
+    a friend that machinery is a keystone, a keystone, a self to feel<br>
+    the earth was not conspicuous nor destroyed, but no longer made body experiences.<br>
+    </p><p>
+    assumptions & mesmerism<br>
+    preparing for a difference between my sphere of truth, soft eyes, <br>
+    nothing I learn the world be seen the things that they submitted to sleep<br>
+    i had remembered bits from the dark<br>
+    </p><p>
+    self defeating patterns too convenient<br>
+    the quality was hope<br>
+    the hope I'll be spoken at in the dark<br>
+    love the rigidity I try to reclaim<br>
+    your interior life can be clear that<br>
+    it gives us better position to turn a thought process <br>
+    </p><p>
+    expectations are down upon the ether for creation<br>
+    [experienced but running the car]<br>
+    still trying to finish the trap<br>
+    granted, id prefer something in season<br>
+    no one to write about; obviously that's by design<br>
+    but to navigate it<br>
+    </p><p>
+    i died, blinding light, over top<br>
+    the human rhythm a certain future<br>
+    i swear to anyone I need. I could not be clear<br>
+    if anything refill the pouring rain<br>
+    feel your interior life spring up<br>
+    </p><p>
+    I remembered bits from which he could rest on unexplained things<br>
+    the pouring rain had remembered it can't be an ever filling cup<br>
+    no one that for about which all we can do without making choices<br>
+    </p><p>
+    nowadays i'll be found<br>
+    my shadow and one another.<br>
+    If I wanted them to fester in the truth<br>
+    struggle is inherently abstract<br>
+    must be careful of the path<br>
+    when I could be friends with quantum decoherence,<br>
+    i could claim a great egalitarian future<br>
+    everyone lives simply in the subconscious<br>
+    </p><p>
+    the world, sometimes unfairly filled with loud sounds.<br>
+    loud enough to penetrate and lusted after<br>
+    forces the truth but no longer moves in the same room<br>
+    from which all can be seen the diversity of safety, uncompromising<br>
+    which mainly means nothing above questioning,<br>
+    break him your friend<br>
+    </p><p>
+    i'd prefer something sacred to question<br>
+    that desire to be the most useless is no universal truth<br>
+    searching for that i cannot in my throat<br>
+    faster than the word accountability behind actions.<br>
+    </p>
+    <pre class="pt-6">
+  use markov::Chain;
+  use std::fs;
+
+  const DRIFTS: &str = "old_drifts.txt";
+
+  fn main() -> std::io::Result<()> {
+    let drifts = fs::read_to_string(DRIFTS).unwrap();
+    let mut chain = Chain::new();
+    chain.feed_str(&drifts);
+    fs::write("new_drifts.txt", chain.generate_str()).unwrap();
+
+    Ok(())
+  }
+    </pre>
+    <h3 class="title has-text-centered"><%= link_to "back", root_path %></h3>
+  </section>
+</div>

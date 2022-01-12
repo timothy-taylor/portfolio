@@ -1,0 +1,6 @@
+<section class="has-text-centered m-4">
+  <h1 class="subtitle"><%= link_to "back", root_path %></h1>
+  <% @image_paths.each do |path| %>
+    <%= image_tag(path, alt: "", class: "is-inline-block") %>
+  <% end %>
+</section>
