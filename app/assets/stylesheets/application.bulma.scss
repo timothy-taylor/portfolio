@@ -39,5 +39,6 @@
 @import 'bulma/bulma';
 
 .project:hover, .project:focus {
+  cursor: pointer;
   opacity: 0.4;
 }

@@ -1,18 +1,226 @@
 <section class="content has-text-right has-text-centered-mobile">
   <h1 class="title has-text-left">projects:</h1>
-  <%= link_to image_tag("chess.png", alt: "chess ruby; coding project"), "https://github.com/timothy-taylor/chess_ruby", height: "128px", width: "128px", class: "project" %>
-  <%= link_to image_tag("constellations.png", alt: "constellations; sequencer for monome norns"), "https://github.com/timothy-taylor/constellations/", height: "128px", width: "128px", class: "project" %>
-  <%= link_to image_tag("weather.png", alt: "weather terminal"), "https://timothy-taylor.github.io/weather_terminal/", height: "128px", width: "128px", class: "project" %>
-  <%= link_to image_tag("pacebook.png", alt: "pacebook: runners' connection"), "https://odin-pacebook-rails.herokuapp.com/", height: "128px", width: "128px", class: "project" %>
-  <%= link_to image_tag("offworld.png", alt: "offworld: interactive granular synth"), "https://timothy-taylor.github.io/offworld", height: "128px", width: "128px", class: "project" %>
-  <%= link_to image_tag("raft2.png", alt: "raft; a delay for monome norns"), "https://github.com/timothy-taylor/raft", height: "128px", width: "128px", class: "project" %>
-  <%= link_to image_tag("tictactoe.png", alt: "tictactoe on next.js"), "https://tictactoe-js.vercel.app", height: "128px", width: "128px", class: "project" %>
-  <%= link_to image_tag("circularbuffer.png", alt: "circular buffer in rust"), "https://gist.github.com/timothy-taylor/1e9bab14fb645c449d3f5ffa930c09e4", height: "128px", width: "128px", class: "project" %>
-  <%= link_to image_tag("battleship.png", alt: "battleship tdd js project"), "https://timothy-taylor.github.io/odin_battleship_js/", height: "128px", width: "128px", class: "project" %>
-  <%= link_to image_tag("tally.png", alt: "tally pomodoro/tracker"), "https://github.com/timothy-taylor/tally", height: "128px", width: "128px", class: "project" %> 
-  <%= link_to image_tag("skateshop.png", alt: "shopping cart project"), "https://timothy-taylor.github.io/odin_shoppingcart_react/", height: "128px", width: "128px", class: "project" %>
-  <%= link_to image_tag("drifts.png", alt: "drifts; generative poem"), drifts_path, height: "128px", width: "128px", class: "project" %>
-  <%= link_to image_tag("cv.png", alt: "cv app in react"), "https://timothy-taylor.github.io/odin_cv_react/", height: "128px", width: "128px", class: "project" %>
-  <%= link_to image_tag("recursive.png", alt: "generative art"), dsp_path, height: "128px", width: "128px", class: "project" %>
-</section>
+  <h2 class="subtitle is-7">click a project for more info</h2>
+  <span>
+    <%= image_tag("chess.png", size: "128x128", alt: "chess ruby; coding project", class: "project js-modal-trigger", data: { target: "chess_ruby" }) %>
+    <div id="chess_ruby" class="modal">
+      <div class="modal-background"></div>
+      <div class="modal-content">
+        <div class="box">
+          <h3>Chess Ruby</h3>
+          <span>Find it</span> <%= link_to "on Github", "https://github.com/timothy-taylor/chess_ruby", class: "has-text-danger" %>
+        <p>Final project for The Odin Project Ruby course.</p>
+        <p>Ruby</p>
+        </div>
+      </div>
+      <button class="modal-close is-large" aria-label="close"></button>
+    </div>
+  </span>
 
+  <span>
+    <%= image_tag("constellations.png", size: "128x128", alt: "constellations; sequencer for monome norns", class: "project js-modal-trigger", data: { target: "constellations" }) %>
+    <div id="constellations" class="modal">
+      <div class="modal-background"></div>
+      <div class="modal-content">
+        <div class="box">
+          <h3>Constellations</h3>
+          <span>Find it</span> <%= link_to "on Github", "https://github.com/timothy-taylor/constellations/", class: "has-text-danger" %>
+        <p>An interactive musical sequencer. Scan the stars! Make music!</p>
+        <p>Lua / Monome Norns / Monome Crow / midi</p>
+        </div>
+      </div>
+      <button class="modal-close is-large" aria-label="close"></button>
+    </div>
+  </span>
+
+  <span>
+    <%= image_tag("weather.png", size: "128x128", alt: "weather terminal in js", class: "project js-modal-trigger", data: { target: "weather_terminal" }) %>
+    <div id="weather_terminal" class="modal">
+      <div class="modal-background"></div>
+      <div class="modal-content">
+        <div class="box">
+          <h3>Weather Terminal</h3>
+          <span>Enjoy it</span> <%= link_to "live", "https://timothy-taylor.github.io/weather_terminal/", class: "has-text-danger" %>
+        <p>A simple, styled weather app.</p>
+        <p>Javascript / webpack / Github Pages</p>
+        </div>
+      </div>
+      <button class="modal-close is-large" aria-label="close"></button>
+    </div>
+  </span>
+  
+ <span>
+    <%= image_tag("pacebook.png", size: "128x128", alt: "pacebook: facebook clone", class: "project js-modal-trigger", data: { target: "pacebook" }) %>
+    <div id="pacebook" class="modal">
+      <div class="modal-background"></div>
+      <div class="modal-content">
+        <div class="box">
+          <h3>Pacebook</h3>
+          <span>Enjoy it</span> <%= link_to "live", "https://odin-pacebook-rails.herokuapp.com/", class: "has-text-danger" %>
+          <p>Final project for The Odin Project Ruby on Rails course.</p>
+          <p>Ruby on Rails / Bulma / Postgres / Heroku</p>
+        </div>
+      </div>
+      <button class="modal-close is-large" aria-label="close"></button>
+    </div>
+ </span>
+
+ <span>
+    <%= image_tag("offworld.png", size: "128x128", alt: "offworld: interactive granular synth", class: "project js-modal-trigger", data: { target: "offworld" }) %>
+    <div id="offworld" class="modal">
+      <div class="modal-background"></div>
+      <div class="modal-content">
+        <div class="box">
+          <h3>Offworld</h3>
+          <span>Enjoy it</span> <%= link_to "live", "https://timothy-taylor.github.io/offworld", class: "has-text-danger" %>
+        <p>An interactive granular synthesizer created for my final project for The Odin Project Javascript course.</p><p>Javascript / React / Jest / Tailwind / Github Pages</p>
+        </div>
+      </div>
+      <button class="modal-close is-large" aria-label="close"></button>
+    </div>
+ </span>
+
+ <span>
+    <%= image_tag("raft2.png", size: "128x128", alt: "raft; a delay for monome norns", class: "project js-modal-trigger", data: { target: "raft" }) %>
+    <div id="raft" class="modal">
+      <div class="modal-background"></div>
+      <div class="modal-content">
+        <div class="box">
+          <h3>Raft</h3>
+          <span>See it</span> <%= link_to "on Github", "https://github.com/timothy-taylor/raft", class: "has-text-danger" %>
+          <p>A delay, looper, and noise generator.</p>
+          <p>Lua / Monome Norns</p>
+        </div>
+      </div>
+      <button class="modal-close is-large" aria-label="close"></button>
+    </div>
+ </span>
+
+ <span>
+    <%= image_tag("tictactoe.png", size: "128x128", alt: "tictactoe on next.js", class: "project js-modal-trigger", data: { target: "tictactoe" }) %>
+    <div id="tictactoe" class="modal">
+      <div class="modal-background"></div>
+      <div class="modal-content">
+        <div class="box">
+          <h3>Tictactoe</h3>
+          <span>Play it</span> <%= link_to "live", "https://tictactoe-js.vercel.app", class: "has-text-danger" %>
+          <p>The classic.</p>
+          <p>Javascript / Next.js / Vercel</p>
+        </div>
+      </div>
+      <button class="modal-close is-large" aria-label="close"></button>
+    </div>
+ </span>
+
+ <span>
+    <%= image_tag("circularbuffer.png", size: "128x128", alt: "circular buffer in rust", class: "project js-modal-trigger", data: { target: "circularbuffer" }) %>
+    <div id="circularbuffer" class="modal">
+      <div class="modal-background"></div>
+      <div class="modal-content">
+        <div class="box">
+          <h3>Circular Buffer</h3>
+          <span>Check it</span> <%= link_to "on Github", "https://gist.github.com/timothy-taylor/1e9bab14fb645c449d3f5ffa930c09e4", class: "has-text-danger" %>
+          <p>A circular buffer implementation for data structures practice.</p>
+          <p>Rust</p>
+        </div>
+      </div>
+      <button class="modal-close is-large" aria-label="close"></button>
+    </div>
+  </span>
+
+ <span>
+    <%= image_tag("battleship.png", size: "128x128", alt: "battleship tdd js project", class: "project js-modal-trigger", data: { target: "battleship" }) %>
+    <div id="battleship" class="modal">
+      <div class="modal-background"></div>
+      <div class="modal-content">
+        <div class="box">
+          <h3>Battleship</h3>
+          <span>Play it</span> <%= link_to "live", "https://timothy-taylor.github.io/odin_battleship_js/", class: "has-text-danger" %>
+        <p>Another classic; built using a TDD approach.</p>
+        <p>Javascript / Jest / webpack / Github Pages</p>
+        </div>
+      </div>
+      <button class="modal-close is-large" aria-label="close"></button>
+    </div>
+ </span>
+
+ <span>
+   <%= image_tag("tally.png", size: "128x128", alt: "tally pomodoro/tracker", class: "project js-modal-trigger", data: { target: "tally" }) %>
+    <div id="tally" class="modal">
+      <div class="modal-background"></div>
+      <div class="modal-content">
+        <div class="box">
+          <h3>Tally</h3>
+          <span>Take a look</span> <%= link_to "on Github", "https://github.com/timothy-taylor/tally", class: "has-text-danger" %> 
+        <p>A personal pomodoro / time tracker.</p>
+        <p>Rust / Ruby</p>
+        </div>
+      </div>
+      <button class="modal-close is-large" aria-label="close"></button>
+    </div>
+ </span>
+
+ <span>
+   <%= image_tag("skateshop.png", size: "128x128", alt: "shopping cart project", class: "project js-modal-trigger", data: { target: "skateshop" }) %>
+    <div id="skateshop" class="modal">
+      <div class="modal-background"></div>
+      <div class="modal-content">
+        <div class="box">
+          <h3>Skate Wheel Shop</h3>
+          <span>Explore it</span> <%= link_to "live", "https://timothy-taylor.github.io/odin_shoppingcart_react/", class: "has-text-danger" %>
+        <p>Shopping cart style app, sorry no actual wheels avaiable.</p>
+        <p>Javascript / React / Jest / Github Pages</p>
+        </div>
+      </div>
+      <button class="modal-close is-large" aria-label="close"></button>
+    </div>
+  </span>
+
+ <span>
+   <%= image_tag("drifts.png", size: "128x128", alt: "drifts; generative poem", class: "project js-modal-trigger", data: { target: "drifts" }) %>
+    <div id="drifts" class="modal">
+      <div class="modal-background"></div>
+      <div class="modal-content">
+        <div class="box">
+          <h3>Drifts</h3>
+          <%= link_to "Read", drifts_path, class: "has-text-danger" %>
+          <p>A generative poem created from random bits of old song lyrics using Markov Chains. See the code at the end of the page.</p>
+          <p>Rust</p>
+        </div>
+      </div>
+      <button class="modal-close is-large" aria-label="close"></button>
+    </div>
+ </span>
+
+ <span>
+   <%= image_tag("cv.png", size: "128x128", alt: "cv app in react", class: "project js-modal-trigger", data: { target: "cv" }) %>
+   <div id="cv" class="modal">
+      <div class="modal-background"></div>
+      <div class="modal-content">
+        <div class="box">
+          <h3>CV Project</h3>
+          <span>Check it</span> <%= link_to "live", "https://timothy-taylor.github.io/odin_cv_react/", class: "has-text-danger" %>
+        <p>An application to aid in making a CV.</p>
+        <p>Javascript / React / Jest / CSS3 / Github Pages</p>
+        </div>
+      </div>
+      <button class="modal-close is-large" aria-label="close"></button>
+    </div>
+ </span>
+
+ <span>
+   <%= image_tag("recursive.png", size: "128x128", alt: "generative art", class: "project js-modal-trigger", data: { target: "dsp" }) %>
+   <div id="dsp" class="modal">
+      <div class="modal-background"></div>
+      <div class="modal-content">
+        <div class="box">
+          <h3>DSP</h3>
+          <%= link_to "Read", dsp_path, class: "has-text-danger" %>
+          <p>I am passionate about sound and have started slowly exploring the world of digital signal processing, some of the bits I have written down here to help the memory.</p>
+          <p>Python / Rust / Ruby</p>
+        </div>
+      </div>
+      <button class="modal-close is-large" aria-label="close"></button>
+    </div>
+  </span>
+</section>
